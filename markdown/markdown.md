@@ -37,9 +37,10 @@ Click [here](http://naver.com)
 `console.log("your message")
 `
 <!-- 해당하는 언어를 작성 -->
-```js
+
+ ```java
 console.log("your message")
-```
+ ```
 
 <hr>
 
