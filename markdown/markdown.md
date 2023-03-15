@@ -1,7 +1,7 @@
 <!-- Heading -->
-#heading1
-##heading2
-##heding3
+# heading1
+## heading2
+### heding3
 
 <!-- List -->
 이것은 **bold**
@@ -18,7 +18,7 @@
 4. 4
 <hr>
 <!-- link -->
-Click [here](http://naver.com)
+Click[here](http://naver.com)
 <hr>
 <!-- Image -->
 ![이미지 설명](https://avatars.githubusercontent.com/u/119658914?v=4)
