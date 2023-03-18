@@ -10,7 +10,7 @@
 + 안녕
   + 안녕
     
-    
+
 <hr>
 1. 1<br>
 2. 2<br>
@@ -32,6 +32,11 @@ Click [here](http://naver.com)
 |Cell1|Cell2|
 |Cell1|Cell2|
 |Cell1|Cell2|
+<!-- Table -->
+
+<hr>
+<!-- Table -->
+
 <hr>
 <!-- Code -->
 `console.log("your message")
@@ -42,7 +47,10 @@ console.log("your message")
 ```
 
 <hr>
-
+```py
+name = input("이름을 입력해주세요 : ")
+print(F"지금 접속한 {name}님 환영합니다!")
+```
 
 > line1
 > >line2
