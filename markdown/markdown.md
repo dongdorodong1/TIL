@@ -61,14 +61,14 @@
 
  ```java
 console.log("your message")
- ```
+```
+```python
+print('hello')
+```
+<hr>
+
 
 <hr>
-```py
-name = input("이름을 입력해주세요 : ")
-print(F"지금 접속한 {name}님 환영합니다!")
-```
-
 > line1
 > >line2
 > > >line3
