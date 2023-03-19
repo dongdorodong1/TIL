@@ -1,7 +1,24 @@
 <!-- Heading -->
-# heading1
-## heading2
-### heding3
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+<!-- 글씨체 -->
+**볼드체**
+*이탤릭체*
+
+<!-- 링크 -->
+[링크](www.naver.com)
+
+
+<u>밑줄</u>
+<del>취소선</del>
+
+<!-- 글꼴색 -->
+<span style="color:red">색상 변경</span>
 
 <!-- List -->
 이것은 **bold**
@@ -18,7 +35,6 @@
 4. 4
 <hr>
 <!-- link -->
-Click[here](http://naver.com)
 <hr>
 <!-- Image -->
 ![이미지 설명](https://avatars.githubusercontent.com/u/119658914?v=4)
@@ -56,4 +72,4 @@ print(F"지금 접속한 {name}님 환영합니다!")
 > line1
 > >line2
 > > >line3
-
+![검은색 화면](../image/2.png)
