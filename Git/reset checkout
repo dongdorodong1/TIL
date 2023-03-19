@@ -1,0 +1,8 @@
+- git reset --hard [커밋아이디]
+- git은 왠만해서는 어떠한 것도 지우지 않는다.
+- ORIG_HEAD | reflog에서 복구 가능
+
+<br>
+- git checkout [commit ID]<br>
+- 커밋 ID를 branch로 가리키고 있다.<br>
+- 특정 커밋을 직접 가르키고 있다.(Detached 상태)
