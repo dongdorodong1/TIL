@@ -2,8 +2,29 @@
 
 ![MVC구조](/image/SpringMVC구조.png)
 
+
+
+### 직접 만든 프레임워크 스프링 MVC 비교
+- FrontController > DispatcherServlet
+- handlerMappingMap > HandlerMapping
+- MyHandlerAdapter > HandlerAdapter
+- ModelView > ModelAndView
+- viewResolver > ViewResolver
+- MyView > View
+<br><br>
+### 요청 흐름
+
+- 서블릿이 호출되면 HttpServlet 이 제공하는 serivce() 가 호출된다.
+- 스프링 MVC는 DispatcherServlet 의 부모인 FrameworkServlet 에서 service() 를 오버라이드
+해두었다.
+- FrameworkServlet.service() 를 시작으로 여러 메서드가 호출되면서
+DispacherServlet.doDispatch() 가 호출된다.
+    - doDispatcher는 핸들러를 조회하고 어댑터를 가져온다.
+
+
+
 > ### 동작순서<br>
-> 1. 핸들러 조회: 핸들러 매핑을 통해 요청 URL에 매핑된 핸들러(컨트롤러)를 조회
+> 1. 핸들러 조회(매핑): 핸들러 매핑을 통해 요청 URL에 매핑된 핸들러(컨트롤러)를 조회
 > 2. 핸들러 어댑터 조회: 핸들러를 실행할 수 있는 핸들러 어댑터를 조회한다.
 > 3. 핸들러 어댑터 실행: 핸들러 어댑터를 실행한다.
 > 4. 핸들러 실행: 핸들러 어댑터가 실제 핸들러를 실행한다.
@@ -24,5 +45,10 @@
 2. HttpRequestHandlerAdapter : HttpRequestHandler 처리
 3. SimpleControllerHandlerAdapter : Controller 인터페이스(애노테이션X, 과거에 사용) 
 처리
+
+## 정리
+<hr>
+핸들러를 매핑하고 핸들러 어댑터를 조회하고 핸들러를 호출한다. 
+그리고 어댑터는 ModelAndView를 반환하고 DispatcherServlet에서 viewResolver에 MV를 던지면 View를 반환해주고 Model을 사용하여 View를 응답한다.
 
 

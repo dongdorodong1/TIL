@@ -33,11 +33,14 @@
 2. 2<br>
 3. 3<br>
 4. 4
+
 <hr>
 <!-- link -->
 <hr>
 <!-- Image -->
 ![이미지 설명](https://avatars.githubusercontent.com/u/119658914?v=4)
+
+![MVC구조](/image/SpringMVC구조.png)
 <hr>
 <img src="https://avatars.githubusercontent.com/u/119658914?v=4" width="400" height="400">
 <hr>
