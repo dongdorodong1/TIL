@@ -66,6 +66,21 @@ th:href="@{/css/bootstrap.min.css}"
 - th:href="@{|/basic/items/${item.id}|}"
 - 상품 이름을 선택하는 링크를 확인해보자.
 - 리터럴 대체 문법을 활용해서 간단히 사용할 수도 있다.
+
+### 속성 변경 - th:value
+### th:value="${item.id}"
+- 모델에 있는 item 정보를 획득하고 프로퍼티 접근법으로 출력한다. ( item.getId() )
+- value 속성을 th:value 속성으로 변경한다
+
+### 속성 변경 - th:action
+- th:action
+- HTML form에서 action 에 값이 없으면 현재 URL에 데이터를 전송한다.
+- 상품 등록 폼의 URL과 실제 상품 등록을 처리하는 URL을 똑같이 맞추고 HTTP 메서드로 두 기능을
+구분한다.
+    - 상품 등록 폼: GET /basic/items/add
+    - 상품 등록 처리: POST /basic/items/add
+- 이렇게 하면 하나의 URL로 등록 폼과, 등록 처리를 깔끔하게 처리할 수 있다.
+
 > ### 참고
 > 타임리프는 순수 HTML 파일을 웹 브라우저에서 열어도 내용을 확인할 수 있고, 서버를 통해 뷰 템플릿을
 거치면 동적으로 변경된 결과를 확인할 수 있다. JSP를 생각해보면, JSP 파일은 웹 브라우저에서 그냥 열면
@@ -73,3 +88,5 @@ JSP 소스코드와 HTML이 뒤죽박죽 되어서 정상적인 확인이 불가
 한다.
 > 이렇게 순수 HTML을 그대로 유지하면서 뷰 템플릿도 사용할 수 있는 타임리프의 특징을 네츄럴 템플릿
 (natural templates)이라 한다
+
+
